@@ -1,0 +1,54 @@
+.carrousel-index {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  width: calc(100% - 30px);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.arrow img {
+  transition: 0.4s ease-in-out;
+  height: 50px;
+}
+
+.slide {
+  height: 415px;
+  border-radius: 25px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .slider {
+    margin-inline: 25px;
+  }
+
+  .left-arrow {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slider {
+    margin-inline: 0px;
+  }
+}

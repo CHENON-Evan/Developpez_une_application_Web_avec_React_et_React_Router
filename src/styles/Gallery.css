@@ -1,0 +1,48 @@
+.gallery {
+  border-radius: 25px;
+  justify-content: center;
+  margin: auto 110px 0;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fill, 385px);
+}
+
+.gallery a {
+  max-width: 380px;
+}
+
+article {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 340px;
+  height: 340px;
+  margin: 20px 20px;
+  border-radius: 15px;
+  box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  filter: opacity(100%) brightness(45%);
+}
+
+.logement_title {
+  position: absolute;
+  color: white;
+  max-width: 250px;
+  font-size: 16px;
+  margin-top: 275px;
+  margin-inline: 16px;
+}
+
+@media screen and (max-width: 1050px) {
+  .gallery {
+    padding: 0;
+  }
+}
